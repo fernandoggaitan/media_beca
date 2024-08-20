@@ -1,0 +1,1488 @@
+@font-face {
+    font-family: caligsa;
+    src: url(Fuentes/calisga-calisga-400.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    background-image: url(Imagenes/Fondov2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+header.notFound {
+    background-image: url(Imagenes/header_notfound.jpg);
+}
+
+#logoutBtn,
+#userBtn,
+#miUsuario,
+#footerLoginCompleto {
+    display: none;
+}
+
+
+
+/*------------------MENU---------Y---------BOTONES-----------*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img {
+    width: 150px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s ease-out;
+}
+
+.menu li {
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.menu .icon {
+    display: none;
+    float: right;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.menu .logo-black,
+.menu .kart-black,
+.menu .kart-default {
+    display: none;
+}
+
+.menu li img,
+.menu .kart-black img {
+    width: 40px;
+}
+
+.menu li span {
+    background-color: green;
+    border-radius: 50%;
+    align-items: end;
+    color: whitesmoke;
+    padding: 3px 8px;
+}
+
+nav a,
+.footerInfoContenedorB a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: solid transparent;
+    transition: border-color 0.5s;
+}
+
+nav a.activo {
+    padding: 10px;
+    border-style: solid;
+    border-bottom: solid;
+    border-radius: 10px;
+}
+
+nav a:not(:has(img)):hover,
+.footerInfoContenedorB a:hover {
+    padding: 10px;
+    border-bottom: solid;
+    transition: border-color 0.5s;
+}
+
+.cctWhiteHeader,
+.cctBlack,
+.cctWhiteHeaderRegistro {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 8px 12px;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: border-color, background-color 0.5s;
+}
+
+.cctWhiteHeader:hover,
+.cctWhiteHeaderRegistro:hover {
+    color: black;
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+    transition: border-color, background-color 0.5s;
+}
+
+.cctBlack {
+    color: black;
+}
+
+.cctBlack:hover {
+    color: whitesmoke;
+    background-color: black;
+    transition: border-color, background-color 0.5s;
+}
+
+.cctWhite20,
+.cctWhite20Btn,
+.cctWhite20BtnUbi {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline;
+    width: auto;
+    transition: border-color, background-color 0.5s;
+}
+
+.cctWhite20Btn,
+.cctWhite20BtnUbi {
+    cursor: pointer;
+    border-color: gray;
+}
+
+.cctWhite20:hover,
+.cctWhite20Btn:hover,
+.cctWhite20BtnUbi:hover {
+    color: whitesmoke;
+    border-color: gray;
+    background-color: gray;
+    transition: border-color, background-color 0.5s;
+}
+
+#principal,
+#principalNF {
+    padding: 6rem 0rem 0rem 15rem;
+}
+
+#principal>div,
+#principalNF>div {
+    max-width: 500px;
+}
+
+
+
+/*------------------SECCIONES------------------------*/
+
+
+
+#acercaNuestro,
+#nuestrosServicios,
+#nuestrosProyectos,
+#sobreNosotros,
+#contactanos,
+#infoServicios,
+#nuestrosProyectos,
+#tiendaDagoba,
+#miUsuario {
+    margin-top: 0;
+    text-align: center;
+}
+
+#nuestrosServicios,
+#miUsuario {
+    background-color: rgb(241, 241, 241);
+    padding-top: 10px;
+}
+
+#infoServicios,
+#nuestrosProyectos {
+    background-color: whitesmoke;
+}
+
+#nuestrosProyectos {
+    padding: 10px;
+}
+
+
+
+/*--------------------DIV's----------------------*/
+
+
+
+.acercaNuesrtoContenedorA,
+.acercaNuesrtoContenedorB,
+.descripcionServicios,
+.descripcionServiciosTienda,
+.listadoProyectos {
+    width: 500px;
+    height: auto;
+    margin: 30px auto;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+}
+
+.descripcionServicios,
+.descripcionServiciosTienda,
+.listadoProyectos {
+    width: 400px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.listadoProyectos {
+    height: 300px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.acercaNuesrtoContenedorB {
+    text-align: right;
+}
+
+.nuestrosServiciosContenedor hr,
+.algunosProyectosTitle hr,
+.titleServicios hr,
+.miUsuarioContenedor hr {
+    margin-top: 35px;
+    width: 70%;
+    display: inline-block;
+}
+
+.nuestrosServiciosContenedor,
+.miUsuarioContenedor {
+    margin: 30px auto;
+    display: inline-block;
+}
+
+.nuestrosServiciosContenedor,
+.miUsuarioContenedor {
+    width: 400px;
+}
+
+.acercaNuesrtoContenedorB img {
+    width: 400px;
+    height: 400px;
+}
+
+.nuestrosServiciosContenedor img,
+.miUsuarioContenedor img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.descripcionServicios img,
+.descripcionServiciosTienda img,
+.listadoProyectos img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+/*------------------FOOTER----------------------*/
+
+
+footer {
+    background-image: url(Imagenes/Fondov2.jpg);
+    background-size: cover;
+    padding: 15px;
+}
+
+#footerCompleto {
+    text-align: center;
+}
+
+.footerLogo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footerLogo img {
+    width: 150px;
+}
+
+.hrLogoFooter {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.footerInfo {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footerInfo img {
+    width: 30px;
+}
+
+.footerInfoContenedorA img {
+    margin-right: 10px;
+}
+
+.footerInfoContenedorA,
+.footerInfoContenedorB,
+.footerInfoContenedorC {
+    flex: 1;
+}
+
+.footerInfoContenedorA ul,
+.footerInfoContenedorB ul,
+.footerInfoContenedorC ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerInfoContenedorA,
+.footerInfoContenedorB,
+.footerInfoContenedorC {
+    margin: 20px;
+    color: whitesmoke;
+}
+
+.footerInfoContenedorA li,
+.footerInfoContenedorB li,
+.footerInfoContenedorC li {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.footerInfoContenedorA li {
+    text-align: left;
+    justify-content: left;
+}
+
+.footerInfoContenedorC li {
+    text-align: right;
+    justify-content: right;
+}
+
+.footerInfoContenedorB li {
+    padding: 5px;
+}
+
+.footerInfoContenedorC hr {
+    display: none;
+}
+
+/*footer ul li:nth-child(4) {
+    display: none; /* Inicialmente oculto *
+}*/
+
+/*---------------------------FUENTES-Y-TEXTOS--------------------------------*/
+
+
+
+.h1Header,
+.h3Header {
+    font-size: 60pt;
+    color: whitesmoke;
+    font-family: caligsa;
+    padding: 10px;
+}
+
+.h3Header {
+    font-size: 20pt;
+    padding: 15px;
+}
+
+.acercaNuesrtoContenedorA h3 {
+    font-size: 20pt;
+    color: black;
+}
+
+.acercaNuesrtoContenedorA p,
+#nuestrosServicios h2,
+#miUsuario h2 {
+    font-size: 30pt;
+    font-family: caligsa;
+    color: black;
+    margin-top: 30px;
+}
+
+#sobreNosotros h2,
+.contactanos h2,
+#sobreNosotros p {
+    margin-top: 0;
+    padding: 1%;
+}
+
+#sobreNosotros h2,
+#contactanos h2,
+#sobreNosotros h3,
+#nuestrosProyectos h2,
+#tiendaDagoba h2,
+.contenidoNuestrosServicios h3,
+.algunosProyectosTitle h2,
+.contenidoMiUsuario h3 {
+    font-family: caligsa;
+    padding: 30px;
+}
+
+.contenidoNuestrosServicios h3,
+.contenidoNuestrosServicios p,
+.contenidoNuestrosServicios a,
+#infoServicios a,
+.descripcionServiciosTienda button,
+.descripcionServiciosTienda a,
+.contenidoMiUsuario h3,
+.contenidoMiUsuario p,
+.contenidoMiUsuario button {
+    margin: 10px;
+    padding: 10px;
+}
+
+#sobreNosotros p,
+.contenidoNuestrosServicios p,
+.descripcionServicios p,
+.descripcionServiciosTienda p,
+.contenidoMiUsuario p {
+    text-align: left;
+    padding-top: 7px;
+}
+
+#sobreNosotros h3 {
+    font-size: 22px;
+}
+
+#sobreNosotros p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titleServicios p {
+    font-size: 14pt;
+    margin: 15px 40px 15px 40px;
+}
+
+#infoServicios h4,
+#infoServicios h5,
+.descripcionServicios h6,
+.descripcionServiciosTienda h6 {
+    font-family: caligsa;
+    font-size: 25pt;
+    color: black;
+    padding-top: 20px;
+}
+
+#infoServicios h5 {
+    font-size: 15pt;
+    padding: 10px;
+}
+
+.descripcionServicios h6,
+.descripcionServiciosTienda h6 {
+    font-family: Montserrat;
+    font-size: 10pt;
+    padding: 10px;
+}
+
+
+/*-----------------------CONTACTO--------------------------------*/
+
+.contenedorContacto {
+    display: inline-flex;
+    vertical-align: middle;
+    text-align: left;
+    padding: 20px;
+}
+
+.contenedorContacto img {
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contenedorContacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedorContacto li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.textosContacto {
+    flex: 1;
+}
+
+form,
+.contenidoErrorTienda,
+.contenidoPagoConfirmado,
+.contenidoUbicacion,
+.contenidoContactoConfirmado,
+.contenidoErrorUsuario,
+.contenidoAddPlant {
+    max-width: 400px;
+}
+
+.modal-content-pago {
+    max-width: 700px;
+}
+
+/*input[type="submit"] {
+    color: rgb(21, 21, 21);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+    color: whitesmoke;
+    transition: 0.5s;
+}*/
+
+textarea {
+    height: 100px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+/************** LOGIN FORM ***************/
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=submit],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px 14px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+.cctWhiteHeaderRegistro {
+    border-style: none;
+}
+
+.botonPrincipal button {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 3px;
+    border-color: whitesmoke;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signupbtn,
+.signinbtn,
+.cancelbtn,
+.cancelbtnpay,
+.cancelbtnlogin,
+.cancelbtnsignup,
+.pagarBtn {
+    background-color: #04AA6D;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.signupbtn:hover,
+.signinbtn:hover,
+.cancelbtn:hover,
+.cancelbtnpay:hover,
+.cancelbtnlogin:hover,
+.cancelbtnsignup:hover,
+.pagarBtn:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.signupbtn,
+.cancelbtn,
+.cancelbtnpay,
+.cancelbtnlogin,
+.cancelbtnsignup,
+.pagarBtn {
+    width: auto;
+}
+
+.cancelbtn,
+.cancelbtnpay,
+.cancelbtnlogin,
+.cancelbtnsignup {
+    background-color: #f44336;
+}
+
+.imgcontainer,
+.imgErrorTienda,
+.imgcheckOut,
+.imgPagoConfirmado,
+.iframeUbicacion,
+.imgContactoConfirmado,
+.imgErrorUsuario,
+.imgAddPlant {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar,
+img.avatarCheckout,
+.iframeUbicacion iframe {
+    width: 80%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.iframeUbicacion iframe {
+    border-radius: 10px;
+}
+
+img.avatarCheckout {
+    width: 50%;
+}
+
+.formularioPago {
+    display: inline-flex;
+}
+
+.container,
+.containerErrorTienda,
+.containerPagoConfirmado,
+.containerUbicacion,
+.containerContactoConfirmado,
+.containerErrorUsuario,
+.containerAddPlant {
+    padding: 16px;
+}
+
+.container {
+    padding-top: 0;
+}
+
+.container h1,
+.containerPago h1 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.containerPago h1 {
+    padding: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal,
+.errorTienda,
+.modalCheckOut,
+.pagoConfirmado,
+.nuestraUbicacion,
+.contactoEnviado,
+.userError,
+.AddPlantKart {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 30px;
+}
+
+.modalCheckOut,
+.userError,
+.errorTienda,
+.AddPlantKart {
+    z-index: 6;
+}
+
+.pagoConfirmado {
+    z-index: 7;
+}
+
+.modal-content,
+.contenidoErrorTienda,
+.modal-content-pago,
+.contenidoPagoConfirmado,
+.contenidoUbicacion,
+.contenidoContactoConfirmado,
+.contenidoErrorUsuario,
+.contenidoAddPlant {
+    background-color: whitesmoke;
+    margin: 5% auto 15% auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.clearfix {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 470px) {
+    span.psw {
+        display: block;
+        float: none;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .cancelbtnlogin,
+    .signinbtn {
+        width: 100%;
+    }
+}
+
+/******************** TIENDA *****************************/
+
+#contenidoTienda {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.productoTienda {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.productoTienda img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.precioProducto {
+    color: grey;
+    font-size: 22px;
+}
+
+.productoTienda button,
+.errorTienda button,
+.pagoConfirmado button,
+.nuestraUbicacion button,
+.contactoEnviado button,
+.formularioContacto button,
+.userError button,
+.AddPlantKart button {
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    padding: 12px;
+    color: whitesmoke;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.productoTienda button:hover,
+.errorTienda button:hover,
+.pagoConfirmado button:hover,
+.nuestraUbicacion button:hover,
+.contactoEnviado button:hover,
+.formularioContacto button:hover,
+.userError button:hover,
+.AddPlantKart button:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.productoTienda p,
+.errorTienda p,
+.productoTienda button,
+.errorTienda button,
+.pagoConfirmado p,
+.pagoConfirmado button,
+.nuestraUbicacion p,
+.nuestraUbicacion button,
+.contactoEnviado p,
+.contactoEnviado button,
+.formularioContacto button,
+.userError p,
+.userError button,
+.AddPlantKart p,
+.AddPlantKart button {
+    margin-top: 5px;
+}
+
+/******************************************* CARRITO ******************************************/
+
+.contenidoCarrito {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 16%;
+    right: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.contenidoCarrito h1 {
+    color: gray;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenidoCarrito .checkOut {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenidoCarrito .checkOut div,
+.pagoTienda {
+    color: whitesmoke;
+    background-color: green;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagoTienda {
+    display: none;
+}
+
+.contenidoCarrito .checkOut div:nth-child(1) {
+    background-color: gray;
+    cursor: auto;
+}
+
+.contenidoCarrito .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: whitesmoke;
+}
+
+.contenidoCarrito .checkOut div:nth-child(2):hover,
+.pagoTienda:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.productosCarrito ul {
+    height: 50%;
+    overflow-y: auto;
+}
+
+
+.productosCarrito li {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100px repeat(2, 1fr);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: black;
+    row-gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.productosCarrito li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productosCarrito li img,
+.productosCarrito li div,
+.productosCarrito li button {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.productosCarrito li button {
+    max-width: 60px;
+    height: auto;
+    color: whitesmoke;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.productosCarrito .count {
+    margin: 0 10px;
+}
+
+/**************************************SLIDESHOW************************************************/
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+/* Caption text */
+.text {
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbertext {
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dotSlider {
+    text-align: center;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activar,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/************************************BOTON SUBIR*********************************************/
+
+#myBtnUp {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 1000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  
+  #myBtnUp:hover {
+    background-color: gray;
+    transition: 0.5s;
+  }
+
+/***************************************RESPONSIVE*******************************************/
+
+@media screen and (max-width: 1370px) {
+
+    .menu li {
+        margin: 5px;
+        padding: 7px;
+    }
+
+    .contenidoCarrito {
+        top: 11%;
+    }
+
+    #principal {
+        padding: 2rem 0rem 0rem 8rem;
+    }
+
+    .h1Header {
+        font-size: 45pt;
+    }
+
+    .h3Header {
+        font-size: 16pt;
+    }
+
+}
+
+
+/***************************** 1035 **********************************/
+
+@media screen and (max-width: 1035px) {
+
+    #menuNavegacion {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+
+    #acercaNuestro,
+    #nuestrosServicios,
+    #sobreNosotros,
+    #tiendaDagoba,
+    #contactanos,
+    #miUsuario {
+        padding-top: 70px;
+        margin-top: -70px;
+    }
+
+    #nuestrosServicios,
+    #miUsuario {
+        background: linear-gradient(to bottom, rgba(241, 241, 241, 0) 0%, rgba(241, 241, 241, 0) 70px, rgb(241, 241, 241) 70px, rgb(241, 241, 241) 100%);
+    }
+
+    .menu {
+        background-color: whitesmoke;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: rgba(211, 211, 211, 0.5) solid;
+        border-top: none;
+    }
+
+    nav a {
+        font-size: 95%;
+        color: black;
+    }
+
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: rgba(211, 211, 211, 0.5) solid;
+        border-top: none;
+    }
+
+    .menu .logo-default {
+        display: none;
+    }
+
+    .menu .logo-black {
+        display: inline-block;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu.active ul {
+        max-height: 500px;
+    }
+
+    .menu .icon {
+        display: block;
+        float: right;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .menu .icon img {
+        width: 35px;
+    }
+
+    .menu.active ul {
+        display: block;
+    }
+
+    .menu li {
+        margin: 10px;
+        padding: 8px;
+    }
+
+    #principal {
+        padding: 6rem 0rem 0rem 5rem;
+    }
+
+    .h1Header {
+        font-size: 40pt;
+    }
+
+    .h3Header {
+        font-size: 16pt;
+    }
+
+    .contenidoCarrito {
+        top: 9.5%;
+    }
+
+    .titleServicios hr {
+        margin-top: 75px;
+    }
+
+    .acercaNuesrtoContenedorA,
+    .acercaNuesrtoContenedorB,
+    .contenidoNuestrosServicios p,
+    .descripcionServicios p,
+    .descripcionServiciosTienda p,
+    #sobreNosotros p,
+    .contenidoMiUsuario p {
+        text-align: center;
+    }
+
+    .acercaNuesrtoContenedorA p,
+    #nuestrosServicios h2,
+    #miUsuario h2 {
+        font-size: 25pt;
+    }
+
+    .acercaNuesrtoContenedorA,
+    .acercaNuesrtoContenedorB,
+    .descripcionServicios,
+    .descripcionServiciosTienda,
+    .listadoProyectos {
+        width: auto;
+    }
+
+    .descripcionServicios img,
+    .descripcionServiciosTienda img,
+    .listadoProyectos img {
+        width: 75%;
+        border-radius: 10px;
+    }
+
+    #sobreNosotros p,
+    .contenidoNuestrosServicios p,
+    .descripcionServicios p,
+    .descripcionServiciosTienda p,
+    .contenidoMiUsuario p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+    }
+
+    .footerInfoContenedorA ul,
+    .footerInfoContenedorC ul {
+        font-size: 90%;
+    }
+
+    .footerInfoContenedorA li {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footerInfoContenedorC li {
+        display: inline-block;
+    }
+
+    .footerInfo img {
+        width: 25px;
+    }
+
+    .footerInfoContenedorA,
+    .footerInfoContenedorC {
+        margin: 5px;
+    }
+
+    .footerInfoContenedorB {
+        display: none;
+    }
+
+    .footerInfoContenedorC hr {
+        display: flex;
+        margin: 10px;
+    }
+
+}
+
+
+/***************************** 900 **********************************/
+
+@media screen and (max-width: 900px) {
+    .formularioPago {
+        flex-direction: column;
+    }
+}
+
+
+/***************************** 630 **********************************/
+
+@media screen and (max-width: 630px) {
+
+    nav a {
+        font-size: 90%;
+    }
+
+    #principal,
+    #principalNF {
+        padding: 7rem 0rem 0rem 4rem;
+    }
+
+    .h1Header {
+        font-size: 40pt;
+    }
+
+    .h3Header {
+        font-size: 15pt;
+    }
+
+    .footerInfoContenedorA ul,
+    .footerInfoContenedorC ul {
+        font-size: 80%;
+    }
+
+    .footerInfoContenedorA,
+    .footerInfoContenedorC {
+        margin: 2px;
+    }
+
+    .signupbtn,
+    .signinbtn,
+    .cancelbtn,
+    .cancelbtnpay,
+    .cancelbtnlogin,
+    .cancelbtnsignup,
+    .pagarBtn {
+        font-size: 14pt;
+    }
+}
+
+/***************************** 480 **********************************/
+
+@media screen and (max-width: 480px) {
+
+    .cctWhiteHeader,
+    .cctBlack,
+    .cctWhiteHeaderRegistro,
+    .cctWhite20,
+    .cctWhite20Btn,
+    .cctWhite20BtnUbi {
+        font-size: 90%;
+    }
+
+    nav a {
+        font-size: 85%;
+    }
+
+    #principal,
+    #principalNF {
+        padding: 10rem 0rem 0rem 0.5rem;
+    }
+
+    .h1Header {
+        font-size: 35pt;
+    }
+
+    .h3Header {
+        font-size: 12pt;
+    }
+
+    .acercaNuesrtoContenedorA p,
+    #nuestrosServicios h2,
+    #miUsuario h2 {
+        font-size: 18pt;
+    }
+
+    .acercaNuesrtoContenedorB img {
+        width: 80%;
+        height: auto;
+    }
+
+    .nuestrosServiciosContenedor,
+    .miUsuarioContenedor {
+        width: 90%;
+    }
+
+    .footerInfoContenedorA ul,
+    .footerInfoContenedorC ul {
+        font-size: 80%;
+    }
+
+    .footerInfoContenedorA,
+    .footerInfoContenedorC {
+        margin: 2px;
+    }
+
+    #infoServicios h4 {
+        font-size: 18pt;
+    }
+
+    .container p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .signupbtn,
+    .signinbtn,
+    .cancelbtn,
+    .cancelbtnpay,
+    .cancelbtnlogin,
+    .cancelbtnsignup,
+    .pagarBtn {
+        font-size: 12pt;
+    }
+
+}

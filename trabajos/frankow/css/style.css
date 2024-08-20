@@ -1,0 +1,124 @@
+html{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.sombra{
+    box-shadow: inset 0px -4px 0px #0000000a;
+}
+.espacio{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.tama{
+    margin-left: auto;
+    margin-right: auto;
+}
+.colorCarou{
+    color: black;
+}
+.acomodar{
+    display: flex;
+}
+.color{
+    text-decoration: none;
+    color: black;
+}
+.texto{
+    align-self: center;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+.acomodar2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arriba{
+    padding-top: 20px;
+}
+.borde{
+    border-style: solid;
+    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+.nombre{
+    padding-left: 400px;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+#arreglo{
+    margin-bottom: -50px;
+}
+.sombra {
+    box-shadow: inset 0px -4px 0px #0000000a;
+}
+.sombra-btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+.card {
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.logo {
+    width: 50px;
+}
+.icon {
+    margin-right: 10px;
+}
+.cuadro{
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+.abajo{
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #AD1C42;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.inicio{
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: #AD1C42;
+    color: white;
+}
+.boton{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background-color: #AD1C42;
+    color: white;
+    border-color: white;
+}
+.boton:hover {
+    background-color: #ad1c5f;
+}
+.inicio:hover{
+    background-color: #ad1c5f;
+}
+.imge{
+    box-shadow: -3px 0px 10px 1px rgb(0, 0, 0.2);
+}

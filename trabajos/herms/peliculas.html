@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/peliculas.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/loading.css">
+
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- icono -->
+    <link rel="icon" href="./imagenes/icon/icono-viendo-una-pelicula.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelicula</title>
+</head>
+<body>
+ <!-- barra de navegacion -->
+ <header>
+    <nav class="nav__menu">                
+        <!-- menu peliculas -->
+        <ul class="menu menu__left--desplegado">
+            <li class="exo-2"><a href="./home.html">Inicio</a></li>
+            <li class="exo-2"><a href="./peliculas.html">Peliculas</a></li>
+            <li class="exo-2"><a href="./404.html">Series</a></li>
+            <li class="exo-2"><a href="./categorias.html">Categorias</a></li>                
+        </ul>
+
+        <ul class="menu menu__left--hamburguesa">
+            <li><a href="#"><img class="img__icono--hamburguesa" src="./imagenes/navbar/menu.png" alt="menu"></a>
+                <ul class="submenu submenu__left">
+                    <li class="exo-2"><a href="./home.html">Inicio</a></li>
+                    <li class="exo-2"><a href="./peliculas.html">Peliculas</a></li>
+                    <li class="exo-2"><a href="./404.html">Series</a></li>
+                    <li class="exo-2"><a href="./categorias.html">Categorias</a></li> 
+                </ul>
+            </li>    
+        </ul>
+
+        <!-- menu usuario -->
+        <ul class="menu menu__right--desplegado">
+            <li class="menu__right--lupa"><img class="img__right--lupa" src="./imagenes/navbar/lupa.png" alt="menu"></li>
+                <li class="li__usuario"><h3 class="me-2 exo-2">Alejandro</h3><a href="#"><img class="img__right--usuario" src="./imagenes/navbar/darth-vader.png" alt="menu"></a>
+                    <ul class="submenu submenu__right">
+                        <li class="exo-2"><a href="./cuenta.html">Cuenta y configuración</a></li>
+                        <li class="exo-2"><a href="./contacto.html">Ayuda</a></li> 
+                        <li class="exo-2"><a href="./index.html">Perfiles</a></li> 
+                    </ul>
+                </li> 
+        </ul>            
+        
+        <ul class="menu menu__right--hamburguesa">
+            <li class="menu__right--lupa"><img class="img__right--lupa" src="./imagenes/navbar/lupa.png" alt="menu"></li>
+            <li><a href="#"><img class="img__right--usuario" src="./imagenes/navbar/darth-vader.png" alt="menu"></a>
+                <ul class="submenu submenu__right">
+                    <li class="exo-2"><a href="#">Alejandro</a></li>
+                    <li class="exo-2"><a href="./cuenta.html">Cuenta y configuración</a></li>
+                    <li class="exo-2"><a href="./contacto.html">Ayuda</a></li> 
+                    <li class="exo-2"><a href="./index.html">Perfiles</a></li> 
+                </ul>
+            </li> 
+        </ul>
+    </nav>
+</header>
+    <div id="div__banner" class="container-fluid mt-5">
+        <div class="div__img--pelicula">
+            <img src="./imagenes/Pelicula/spiderman.jpg" alt="netflix">
+        </div>
+    
+    <div class="container">
+        <h1 class="fw-bolder exo-2 fs-1 fs-md-4 fs-lg-5">
+            Spider-Man: Homecoming
+        </h1>
+        <p class="fw-normal exo-2 fs-1 fs-md-4 fs-lg-5">
+            Luego de la Batalla de Nueva York, Adrian Toomes y su compañía de rescate son contratados para limpiar la ciudad, pero su operación es asumida por el Departamento de Control de Daños (D.D.C.), una asociación entre Tony Stark y el gobierno estadounidense. Enfurecido por perder su trabajo, Toomes persuade a sus empleados de conservar la tecnología Chitauri que ya han recogido y la usen para crear y vender armas avanzadas, entre las que incluye un arnés en forma de alas y garras metálicas denominado Buitre. Cuatro años después, Peter Parker es reclutado para los Vengadores por Stark para ayudar con una disputa interna, pero continúa con sus estudios en la Escuela Midtown de Ciencia y Tecnología cuando Stark le dice que aún no está listo para ser un Vengador completo.        
+        </p>
+    </div>
+
+    <section class="container m-3">
+        <h3 class="fw-bold exo-2 fs-1 fs-md-4 fs-lg-5">Peliculas recomendadas</h3>
+        <div class="div__img--peliculas-recomendadas">
+            <img src="./imagenes/peliculas-series/hard-fie.png" alt="die hard">
+            <img src="./imagenes/peliculas-series/anillos.png" alt="el señor de los anillos">
+        </div>
+    </section>
+    </div>
+     <!-- bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
