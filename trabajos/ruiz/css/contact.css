@@ -1,0 +1,59 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+article {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-direction: column;
+}
+.margin-top {
+  margin-top: 30px;
+}
+
+.first-second-name {
+  width: 45%;
+}
+#telefono {
+  width: 50%;
+}
+.line-input {
+  border: none;
+  border-bottom: solid black 1px;
+  background-color: transparent;
+}
+#mail {
+  width: 92%;
+}
+
+#option {
+  width: 200px;
+  background-color: #ece9e9;
+  color: #44413d;
+}
+
+#opinion {
+  width: 92%;
+  height: 200px;
+}
+#enviar {
+  width: 140px;
+  margin: 30px auto;
+  border-radius: 23px;
+  background-color: #ece9e9;
+  color: #44413d;
+}
+
+#enviar:hover {
+  background-color: #9cb6dd;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    width: 500px;
+    margin: auto;
+    padding: 20px 0;
+  }
+}

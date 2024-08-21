@@ -1,0 +1,19 @@
+.article-first-container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+}
+
+.btn-primary{
+  background-color: #94afd8;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #c2b8b8;
+  
+}

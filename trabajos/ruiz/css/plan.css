@@ -1,0 +1,74 @@
+.buttons-container {
+  border-radius: 6px;
+  border: 1px solid #ece9e9;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.plan-paragraph,
+.plan-list {
+  font-size: 1.2em;
+}
+
+.price-text {
+  color: #7b7b7b;
+  font-size: 1.3em;
+}
+
+.price-number {
+  font-weight: bold;
+  font-size: 1.7em;
+  color: #464646;
+}
+
+.btn-inscribirse {
+  font-size: 1.7em;
+  background-color: #9cb6dd;
+
+  border-color: #9cb6dd;
+}
+.btn-consulta {
+  margin-top: 20px;
+  color: #80a3d6;
+  background-color: white;
+  padding: 5px 8px;
+}
+
+.plan-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-container {
+    width: 300px;
+    height: 150px;
+  }
+  .plan-detail {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .buttons-container {
+    width: 350px;
+    height: 150px;
+  }
+  .plan-detail {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .plan-detail {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .plan-detail {
+    width: 75%;
+  }
+}

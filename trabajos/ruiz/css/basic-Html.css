@@ -1,0 +1,62 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+.width100 {
+  width: 100%;
+}
+.text-paragraphs {
+  margin-top: 25px;
+}
+.div-inline-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ul-example-list {
+  margin-top: 15px;
+}
+.div-block-inline-elements {
+  margin-bottom: 20px;
+}
+.div-example {
+  display: flex;
+  flex-wrap: wrap;
+}
+.exercises-list-items {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .img-inline-block-tags {
+    width: 65%;
+    margin-left: 17%;
+  }
+  .example-img {
+    width: 75%;
+    margin-left: 13%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img-inline-block-tags {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .example-img {
+    width: 65%;
+    margin-left: 17%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .inline-block-paragraph {
+    width: 50%;
+  }
+  .img-inline-block-tags {
+    margin-left: 0%;
+  }
+  .example-img {
+    width: 45%;
+    margin-left: 0;
+  }
+  .ul-example-list {
+    width: 55%;
+  }
+}

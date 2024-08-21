@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+header {
+  background-color: #ece9e9;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+.img-back-main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.img-back-main img {
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+.div-link-a-index {
+
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  width: 50px;
+  height: 50px;
+  
+}
+.link-a-index img {
+  width: inherit;
+}
+.logo-text {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-size: 1.6em;
+  color: black;
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 78%;
+}
+.nav-bar a {
+  margin: 0px 3%;
+  color: #57534e;
+  font-size: 1.2em;
+}
+.nav-bar a:hover{
+ text-decoration: underline;
+ background-color: #e7e0e0;
+ border-radius: 5px;
+}
+article,aside {
+  padding: 20px 40px;
+}
+.article-H1-Main {
+  text-align: center;
+  font-size: 2em;
+}
+
+footer {
+  background-color: #57534e;
+ 
+}
+.footer-container {
+  display: flex;
+}
+.footer-container div {
+  width: 50%;
+}
+.footer-div {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.left{
+  align-items: flex-start;
+}
+.right{
+  align-items: flex-end;
+}
+.footer-social-img {
+  width: 23px;
+  margin-right: 10px;
+}
+.footer-social-a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.footer-social-list {
+  list-style-type: none;
+}
+.footer-social-list-items {
+  margin-top: 5px;
+}
+footer p {
+  color: aliceblue;
+  margin: 0;
+}
+.footer-phone {
+  margin-top: 10px;
+}
+.footer-copyright {
+  font-size: 0.8em;
+
+}
+
+@media screen and (min-width: 600px){
+  .logo-text{
+    display: block;
+  }
+  .nav-bar{
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .logo-text{
+    display: block;
+  }
+
+}
+@media screen and (min-width: 1024px){
+  article,aside {
+    padding: 20px 70px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+ 
+
+  article,aside {
+    padding: 20px 130px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+ 
+
+ 
+}
+
+@media screen and (min-width: 1500px){
+ 
+
+ 
+}
