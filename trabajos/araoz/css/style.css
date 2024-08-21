@@ -1,0 +1,136 @@
+body {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 60px;
+    background: linear-gradient(to bottom, #000428, #1f1793); 
+      
+  }
+
+  .logo {
+    width: 50px; 
+    height: auto;
+    
+}
+
+
+ .footer {
+    background-color: #e8eef1;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  h5 {
+    margin-left: 30px;
+  }
+  
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.navbarcolor{
+background-color: #e8eef1;
+margin-bottom: 20px;
+}
+
+.texto1{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.aside{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.textonos1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+
+.listaplanetas{
+    margin-left: 20px;
+}
+
+.textoplanetas{
+    margin-left: 20px;
+}
+
+.textoinfo{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.textocontacto{
+    margin-left: 20px;
+}
+
+.formulario label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+#datoscon{
+    background-color: #000000;
+}
+  
+
+.formulario {
+    padding: 20px; 
+    background-color: #1f1793; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px #000000; 
+    color: #000000;
+    margin-right: 40%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.formulario .col-lg-6,
+.formulario .col-md-8,
+.formulario .col-sm-10 {
+    max-width: 100%; 
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+label, input, textarea, button {
+    width: 100%; 
+    margin-bottom: 15px; 
+}
+
+.botonformulario {
+    background-color: #1f1793; 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.botonformulario:hover {
+    background-color: #3628f1; 
+}
+
