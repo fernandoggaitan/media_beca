@@ -1,0 +1,180 @@
+.landing {
+  height: calc(100vh);
+  width: 100%;
+  position: relative;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+#carouselExampleSlidesOnly {
+  background-color: #202020;
+  z-index: 0;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.image-i {
+  transition: 1s ease;
+  transition-duration: 1s;
+
+  &:hover {
+    background-color: #ccc;
+    transform: scale(1.1);
+  }
+}
+
+#waves {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+}
+
+.carousel2 {
+  display: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.fade-mobile {
+  display: none;
+  z-index: 0;
+}
+
+.fadein img {
+  position: absolute;
+  top: 0;
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 15s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.f1 {
+  animation-delay: -10s;
+}
+
+.f2 {
+  animation-delay: -5s;
+}
+
+.f3 {
+  animation-delay: -0s;
+}
+
+@media screen and (max-width: 992px) {
+  #waves {
+    width: 100vw;
+    bottom: calc(15vh) !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .svg {
+    width: calc(100% + 2px);
+    max-width: calc(100% + 2px);
+    margin-left: -1px;
+  }
+
+  .col-responsive {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+  }
+
+  .entrevistas-text,
+  .entrevistas-title,
+  .entrevistas-description {
+    width: 100vw !important;
+  }
+
+  .categoria-responsive {
+    width: 103vw !important;
+  }
+
+  .carousel2 {
+    display: block;
+  }
+
+  .cat-dest {
+    display: none;
+  }
+
+  .image-i:hover {
+    transform: scale(1);
+  }
+
+  .fade-mobile {
+    display: block;
+    width: 100vw !important;
+    height: 800px;
+  }
+
+  .f1,
+  .f2,
+  .f3 {
+    width: 100vw !important;
+  }
+
+  .fade-desktop {
+    display: none;
+  }
+
+}
